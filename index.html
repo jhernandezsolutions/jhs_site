@@ -8,30 +8,68 @@
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
         }
         .container {
             text-align: center;
-            background-color: #fff;
+            margin: 20px auto;
             padding: 20px;
-            border-radius: 10px;
+            background-color: #fff;
+            width: 80%;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        section {
+            margin: 40px 0;
         }
         h1 {
             margin: 0;
         }
-        p {
-            margin: 10px 0;
+        nav a {
+            margin: 0 15px;
+            color: #fff;
+            text-decoration: none;
+        }
+        footer p {
+            margin: 5px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>J Hernandez Solutions</h1>
-        <p>Cybersecurity Portfolio & Narration Work</p>
+        <nav>
+            <a href="#cybersecurity">Cybersecurity Portfolio</a>
+            <a href="#narration">Narration Work</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Welcome! I specialize in cybersecurity and voice narration. Check out my portfolio below.</p>
+        </section>
+
+        <section id="cybersecurity">
+            <h2>Cybersecurity Portfolio</h2>
+            <p>Here, you'll find my cybersecurity projects and tools I've developed. Coming soon!</p>
+        </section>
+
+        <section id="narration">
+            <h2>Narration Work</h2>
+            <p>Samples of my voice acting and audiobook narrations. Coming soon!</p>
+        </section>
     </div>
+
+    <footer>
+        <p>Contact: <a href="mailto:joey@jhernandez.solutions">joey@jhernandez.solutions</a></p>
+        <p>© 2024 J Hernandez Solutions</p>
+    </footer>
 </body>
 </html>
